@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #131418;
+    background-color: #F4DFD0;
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+}
+
+/* area header*/
+
+nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo a {
+    align-items: center;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #131418;
+
+}
+
+nav ul li {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #131418;
+}
+
+
+
+nav ul li:hover {
+
+    background-color: azure;
+}
+
+nav ul .hide {
+    display: none;
+}
+
+/* box main*/
+
+.mainbox {
+    display: flex;
+}
+
+.gruparticle {
+    max-width: 956px;
+    margin: 0;
+}
+
+.gruparticle p {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+/* area main*/
+article {
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+}
+
+.content {
+    display: flex;
+    margin: 20px;
+}
+
+.imagebox {
+    flex: 50%;
+    padding: 10px;
+}
+
+.imagemax {
+    max-width: 100%;
+    height: auto;
+}
+
+.textbox {
+    flex: 50%;
+    padding: 10px;
+    color: blackx;
+}
+
+.textbox h1 {
+    font-size: 40px;
+}
+
+.textbox p {
+    font-size: 15px;
+    padding: 20px;
+    color: #131418;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+/* area aside*/
+aside {
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    display: flex;
+}
+
+.side {
+    flex: 50%;
+}
+
+.profile {
+    flex: 50%;
+    text-align: center;
+}
+
+.profileimage {
+    max-width: 75%;
+    height: auto;
+}
+
+.profile h3 {
+    font-size: 21px;
+    padding: 5px;
+}
+
+.btn {
+
+    background-color: #EC407A;
+    font-size: 17px;
+    border: 2px solid #131418;
+}
+
+.btn:hover {
+    background-color: azure;
+}
+
+.socmed {
+    margin: 10px;
+    border: 2px solid #131418;
+    color: #131418;
+}
+
+.socmed a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #131418;
+}
+
+.socmed:hover {
+    background-color: azure;
+}
+
+/* area footer*/
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.footbar a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 30px;
+    color: #131418;
+}
+
+.footbar a:hover {
+
+    color: azure;
+}
+
+#penulis {
+    margin-top: 10px;
+    display: none;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #131418;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    color: #EC407A;
+    background-color: azure;
+    border: 1px solid #131418;
+}
+
+#top:hover {
+    background-color: #131418;
+    color: azure;
+}
+
+@media (max-width: 1024px) {
+
+    .mainbox,
+    .content,
+    .sidebar {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 414px) {
+
+    nav ul,
+    nav ul li {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .textbox p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    nav ul,
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footbar a {
+        padding: 10px;
+    }
+}
